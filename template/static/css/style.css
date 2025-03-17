@@ -7,13 +7,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #197080;
+    background-color: #f3f9fa;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
   }
 
   .container {  
+    height: auto;
+    margin-top: 20px;
     font-family: "Source Sans 3", sans-serif;
+    background-color: aquamarine;
+    padding: 15px;
+  }
+  .botoes{
+    padding-top: 25px;
   }
   
