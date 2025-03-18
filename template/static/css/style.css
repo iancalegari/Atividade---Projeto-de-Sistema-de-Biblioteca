@@ -80,12 +80,14 @@ input {
 }
 
 .botao label:hover {
-  background-color: #ddd;
+  background-color: #506b75;
+  font-family: "Source Sans 3", sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 input[type="radio"]:checked + label {
   font-family: "Source Sans 3", sans-serif;
-  color: white;
-  background-color: #6f94a1;
-  border-color: #6f94a1;
+  color: rgb(255, 255, 255);
+  background-color: #506b75;
+  border-color: #506b75;
 }
