@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Sans+3:ital,wght@0,200..900&display=swap");
 
 body {
   height: auto;
@@ -18,7 +18,7 @@ body {
   margin-top: 20px;
   font-family: "Source Sans 3", sans-serif;
   background-color: #f1a150;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 15px;
 }
 
@@ -34,26 +34,32 @@ body {
 
 input {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 3vh;
+}
+
+.linhadivisao {
+  border-top: 3px solid #dad4cf;
+  margin-top: 30px;
+  width: 75%;
 }
 
 /* Botão personalizado retirado do link: https://uiverse.io/zymantas-katinas/pink-lizard-56 */
 .button {
   position: relative;
+  margin-top: 15px;
   border: none;
   background: transparent;
-  padding: 20px 0 0 0;
-  outline: none;
+  padding: 10px;
   cursor: pointer;
   font-family: "Source Sans 3", sans-serif;
-  display: flex;
+  display: inline-block;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
 
-/* Ocultando o checkbox */
-.select-checkbox {
+/* Ocultando o input radio */
+.button input[type="radio"] {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -68,15 +74,14 @@ input {
   padding: 8px 20px;
   font-size: 1rem;
   color: rgb(0, 0, 0);
-  border-radius: 8px;
+  border-radius: 5px;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
   background: #83eaed;
 }
 
-/* cor do select */
-.select-checkbox:checked + .edge + .front {
-  background: #f1a150;
+.button input[type="radio"]:checked + .edge + .front {
+  background: #f1a150 !important;
 }
 
 /* Efeitos de hover */

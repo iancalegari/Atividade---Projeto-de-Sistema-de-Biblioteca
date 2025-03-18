@@ -9,31 +9,34 @@
 <body>
     <div class="container">
         <h1>Bem-vindos ao BuscaLivros 📚</h1>
-        <p></p>
     </div>
+    
     <div class="botoes">
         <label class="button btn01">
-            <input type="checkbox" class="select-checkbox">
+            <input type="radio" name="busca" id="autor">
             <span class="edge"></span>
             <div class="front">
-                <span>Clique para procurar por autor</span>
+                <span>Clique para procurar por Autor</span>
             </div>
         </label>
-        <label class="button btn02">
-            <input type="checkbox" class="select-checkbox">
+        
+        <label class="button btn02" checked>
+            <input type="radio" name="busca" id="titulo">
             <span class="edge"></span>
             <div class="front">
-                <span>Clique para procurar por Título do livro</span>
+                <span>Clique para procurar por Título do Livro</span>
             </div>
         </label>
+        
         <label class="button btn03">
-            <input type="checkbox" class="select-checkbox">
+            <input type="radio" name="busca" id="editora">
             <span class="edge"></span>
             <div class="front">
                 <span>Clique para procurar por Editora</span>
             </div>
         </label>
     </div>
+
     <div class="inputtext">
         <label for="livro">Digite sua busca de acordo com o select acima:<br></label>
         <input
@@ -42,8 +45,9 @@
             required
             minlength="4"
             maxlength="65"
-            size="50" 
+            size="50"
         />
     </div>
+    <div class="linhadivisao"></div>
 </body>
 </html>
