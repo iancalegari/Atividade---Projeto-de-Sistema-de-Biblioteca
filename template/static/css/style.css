@@ -38,7 +38,7 @@ input {
   height: 3vh;
 }
 
-/* CONFIGURAÇÃO DO BOTÃO, RETIRADO DAQUI: https://uiverse.io/zymantas-katinas/pink-lizard-56 */
+/* Botão personalizado retirado do link: https://uiverse.io/zymantas-katinas/pink-lizard-56 */
 .button {
   position: relative;
   border: none;
@@ -47,8 +47,19 @@ input {
   outline: none;
   cursor: pointer;
   font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-/* Camada da frente com tamanho reduzido */
+
+/* Ocultando o checkbox */
+.select-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .button .front {
   position: relative;
   display: flex;
@@ -60,10 +71,15 @@ input {
   border-radius: 8px;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  background: #83eaed;
+}
+
+/* cor do select */
+.select-checkbox:checked + .edge + .front {
+  background: #f1a150;
 }
 
 /* Efeitos de hover */
-
 .button:hover .front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
@@ -77,18 +93,4 @@ input {
 /* Evita seleção de texto */
 .button .front span {
   user-select: none;
-}
-
-/* cores */
-.btn01 .front,
-.btn02 .front {
-  background: #83eaed;
-}
-.btn03 .front {
-  background: #83eaed;
-}
-
-.btn01:hover .front,
-.btn02:hover .front {
-  background: #83eaed;
 }

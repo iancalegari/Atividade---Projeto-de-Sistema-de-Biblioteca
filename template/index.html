@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca Livros</title>
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
     <div class="container">
-      <h1>Bem-vindos ao BuscaLivros 📚</h1>
-      <p></p>
+        <h1>Bem-vindos ao BuscaLivros 📚</h1>
+        <p></p>
     </div>
     <div class="botoes">
-      <button class="button btn01">
-        <span class="edge"></span>
-        <div class="front">
-          <span>Clique para procurar por autor</span>
-        </div>
-      </button>
-      <button class="button btn02">
-        <span class="edge"></span>
-        <div class="front">
-          <span>Clique para procurar por Titulo do livro</span>
-        </div>
-      </button>
-      <button class="button btn03">
-        <span class="edge"></span>
-        <div class="front">
-          <span>Clique para procurar por Editora</span>
-        </div>
-      </button>
+        <label class="button btn01">
+            <input type="checkbox" class="select-checkbox">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por autor</span>
+            </div>
+        </label>
+        <label class="button btn02">
+            <input type="checkbox" class="select-checkbox">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por Título do livro</span>
+            </div>
+        </label>
+        <label class="button btn03">
+            <input type="checkbox" class="select-checkbox">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por Editora</span>
+            </div>
+        </label>
     </div>
     <div class="inputtext">
-      <label for="livro">Digite sua de acordo com select acima:<br /></label>
-      <input
-        type="text"
-        name="livro"
-        required
-        minlength="4"
-        maxlength="65"
-        size="50"
-      />
+        <label for="livro">Digite sua busca de acordo com o select acima:<br></label>
+        <input
+            type="text"
+            name="livro"
+            required
+            minlength="4"
+            maxlength="65"
+            size="50" 
+        />
     </div>
-  </body>
+</body>
 </html>
