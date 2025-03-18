@@ -12,9 +12,35 @@
         <p></p>
     </div>
     <div class="botoes">
-        <button class="btn01">Clique para procurar por autor</button>
-        <button class="btn02">Clique para procurar por Titulo do livro</button>
-        <button class="btn02">Clique para procurar por Editora</button>
+        <button class="button btn01">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por autor</span>
+            </div>
+        </button>
+        <button class="button btn02">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por Titulo do livro</span>
+            </div>
+        </button>
+        <button class="button btn02">
+            <span class="edge"></span>
+            <div class="front">
+                <span>Clique para procurar por Editora</span>
+            </div>
+        </button>
+    </div>
+    <div class="inputtext">
+        <label for="livro">Digite aqui de acordo com select acima:<br></label>
+        <input
+            type="text"
+             name="livro"
+             required
+             minlength="4"
+             maxlength="65"
+            size="50" 
+        />
     </div>
 </body>
 </html>
