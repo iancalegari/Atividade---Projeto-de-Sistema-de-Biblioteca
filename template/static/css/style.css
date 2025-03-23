@@ -40,14 +40,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: auto;
+}
+
+.inputtext label {
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 input {
   text-align: center;
   padding: 10px;
   border-radius: 5px;
-  height: 3vh;
+  height: 1.5vh;
   width: 80%;
   max-width: 400px;
 }
@@ -61,7 +66,7 @@ button#buscar {
   padding: 10px;
   border: 1px solid #ccc;
   background-color: #abcccf;
-  color: black;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -109,7 +114,7 @@ button#buscar:hover {
   transition: background-color 0.3s;
 }
 
-botao label:hover {
+.botao label:hover {
   background-color: #506b75;
   color: white;
 }
@@ -118,4 +123,28 @@ input[type="radio"]:checked + label {
   color: white;
   background-color: #506b75;
   border-color: #506b75;
+}
+
+/* TABELA DOS LIVROS */
+.container-tabela {
+  margin-top: 15px;
+  width: 76%;
+  max-width: auto;
+}
+
+table {
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #506b75;
+  color: #f2f2f2;
 }
