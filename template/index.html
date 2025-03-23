@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Busca Livros</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="icon" href="static/img/logo2.svg" type="image/svg">
-</head>
-<body>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="icon" href="static/img/logo2.svg" type="image/svg" />
+  </head>
+  <!-- CORPO DO SITE -->
+  <body>
     <div class="container">
-        <h1>Bem-vindos ao BuscaLivros</h1>
-        <img src="static/img/logo2.svg" alt="Logo" class="logo">
+      <h1>Bem-vindos ao BuscaLivros</h1>
+      <img src="static/img/logo2.svg" alt="Logo" class="logo" />
     </div>
+
     <!-- Botoes -->
     <div class="botoes">
-        <div class="botao">
-            <input type="radio" id="radio1" name="group" >
-            <label for="radio1">Clique para procurar por Autor</label>
-        </div>
-        <div class="botao">
-            <input type="radio" id="radio2" name="group" checked>
-            <label for="radio2">Clique para procurar por Título do Livro</label>
-        </div>
-        <div class="botao">
-            <input type="radio" id="radio3" name="group">
-            <label for="radio3">Clique para procurar por Editora</label>
-        </div>
+      <div class="botao">
+        <input type="radio" id="radio1" name="group" />
+        <label for="radio1">Clique para procurar por Autor</label>
+      </div>
+      <div class="botao">
+        <input type="radio" id="radio2" name="group" checked />
+        <label for="radio2">Clique para procurar por Título do Livro</label>
+      </div>
+      <div class="botao">
+        <input type="radio" id="radio3" name="group" />
+        <label for="radio3">Clique para procurar por Editora</label>
+      </div>
     </div>
+
     <!-- Caixa de pesquisa -->
     <div class="inputtext">
-        <label for="livro">Digite a busca juntamente do select acima<br></label>
-        <input
-            type="text"
-            name="livro"
-            required
-            minlength="4"
-            maxlength="65"
-            size="50"
-        />
+      <label for="livro">Digite a busca juntamente do select acima<br /></label>
+      <input
+        type="text"
+        name="livro"
+        id="livro"
+        required
+        minlength="4"
+        maxlength="65"
+        size="50"
+      />
+      <button id="buscar">Buscar</button>
     </div>
+
     <div class="linhadivisao"></div>
-</body>
+  </body>
 </html>

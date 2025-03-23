@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Sans+3:ital,wght@0,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Sans+3:wght@200..900&display=swap");
 
 body {
   height: auto;
@@ -30,11 +30,14 @@ body {
   margin: 13px;
 }
 
+/* Caixa de pesquisa */
 .inputtext {
   font-family: "Inconsolata", monospace;
   width: 100%;
   text-align: center;
-  display: grid;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10vh;
@@ -42,18 +45,45 @@ body {
 
 input {
   text-align: center;
+  padding: 10px;
   border-radius: 5px;
   height: 3vh;
+  width: 80%;
+  max-width: 400px;
 }
 
+/* Botão de busca */
+button#buscar {
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #abcccf;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+button#buscar:hover {
+  background-color: #506b75;
+  color: white;
+}
+
+/* Linha de divisão */
 .linhadivisao {
   border-top: 3px solid #dad4cf;
   margin-top: 30px;
   width: 75%;
 }
 
-/* Botão personalizado */
-
+/* Botões */
 .botoes {
   display: flex;
   margin-top: 10px;
@@ -79,15 +109,13 @@ input {
   transition: background-color 0.3s;
 }
 
-.botao label:hover {
+botao label:hover {
   background-color: #506b75;
-  font-family: "Source Sans 3", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 input[type="radio"]:checked + label {
-  font-family: "Source Sans 3", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: #506b75;
   border-color: #506b75;
 }
